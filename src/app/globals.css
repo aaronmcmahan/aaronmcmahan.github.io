@@ -2,26 +2,223 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+  margin-bottom: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.content p,
+.content hr,
+.content pre,
+.content dl {
+  margin-bottom: 1.25rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.content ul {
+  list-style-type: disc;
+}
+
+.content dt {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.content dd {
+  padding-left: 2.5rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin-bottom: 1.25rem;
+  padding-top: .5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39/var(--tw-text-opacity));
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.content h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.content h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.content h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.content p,
+.content hr,
+.content pre,
+.content dl {
+  margin-bottom: 1.25rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+}
+
+.content ol,
+.content ul {
+  margin-bottom: 1.25rem;
+  display: grid;
+  list-style-position: inside;
+  gap: .5rem;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.content blockquote {
+  margin-top: 1.75rem;
+  margin-bottom: 1.25rem;
+  border-radius: .5rem;
+  border-width: 1px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128/var(--tw-text-opacity));
+}
+
+.content table {
+  margin-bottom: 1.25rem;
+  width: 100%;
+  border-collapse: separate;
+  --tw-border-spacing-x: 0px;
+  --tw-border-spacing-y: 0px;
+  border-spacing: var(--tw-border-spacing-x)var(--tw-border-spacing-y);
+  border-radius: .5rem;
+  border-width: 1px;
+}
+
+.content table {
+  border-collapse: separate;
+  --tw-border-spacing-x: 0px;
+  --tw-border-spacing-y: 0px;
+  border-spacing: var(--tw-border-spacing-x)var(--tw-border-spacing-y);
+}
+
+table {
+  text-indent: 0;
+  border-collapse: collapse;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.content img {
+  border-radius: .5rem;
+}
+
+.content thead th {
+  border-bottom-width: 2px;
+  border-right-width: 1px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.content tbody td {
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.content pre {
+  border-radius: .5rem;
+  border-width: 1px;
+  padding: 1.25rem;
+}
+
+.content pre code {
+  border-width: 0;
+  background-color: transparent;
+}
+
+.content code {
+  border-radius: .5rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246/var(--tw-bg-opacity));
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, liberation mono, courier new, monospace;
+  font-size: 1em;
+}
+
+.content .footnotes {
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.content .footnotes p {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.content ol {
+  list-style-type: decimal;
 }
